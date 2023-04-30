@@ -13,9 +13,14 @@ Text Domain: automated-accessibility-checker
 function automated_accessibility_checker_enqueue_scripts() {
     wp_enqueue_script('automated-accessibility-checker', plugin_dir_url(__FILE__) . 'js/ai.js', array('jquery'), '1.0.0', true);
     wp_enqueue_style('automated-accessibility-checker', plugin_dir_url(__FILE__) . 'css/ai.css', array(), '1.0.0');
+    
+    // Pass the API key to the JavaScript file
+    $config = array(
+        'openai_api_key' => OPENAI_API_KEY
+    );
+    wp_localize_script('automated-accessibility-checker', 'automated_accessibility_checker', $config);
 }
 add_action('admin_enqueue_scripts', 'automated_accessibility_checker_enqueue_scripts');
-
 
 // Add the plugin's settings page to the admin menu
 function automated_accessibility_checker_add_menu_page() {
