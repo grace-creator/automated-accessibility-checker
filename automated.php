@@ -42,5 +42,11 @@ function automated_accessibility_checker_render_settings_page() {
     echo '<textarea id="automated-accessibility-checker-content" class="widefat" rows="10"></textarea>';
     echo '<button id="automated-accessibility-checker-analyze" class="button button-primary">' . __('Analyze', 'automated-accessibility-checker') . '</button>';
     echo '<div id="automated-accessibility-checker-results"></div>';
+
+    // Add the disclaimer
+    echo '<p class="automated-accessibility-checker-disclaimer">';
+    echo __('Please note that the suggestions provided by the AI are for guidance purposes and may not cover all aspects of accessibility guidelines. We encourage users to consult WCAG documentation and seek expert advice for a comprehensive accessibility audit.', 'automated-accessibility-checker');
+    echo '</p>';
+
     echo '</div>';
 }
