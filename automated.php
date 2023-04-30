@@ -11,10 +11,11 @@ Text Domain: automated-accessibility-checker
 
 // Enqueue the necessary JavaScript and CSS files
 function automated_accessibility_checker_enqueue_scripts() {
-    wp_enqueue_script('automated-accessibility-checker', plugin_dir_url(__FILE__) . 'js/automated-accessibility-checker.js', array('jquery'), '1.0.0', true);
-    wp_enqueue_style('automated-accessibility-checker', plugin_dir_url(__FILE__) . 'css/automated-accessibility-checker.css', array(), '1.0.0');
+    wp_enqueue_script('automated-accessibility-checker', plugin_dir_url(__FILE__) . 'js/ai.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_style('automated-accessibility-checker', plugin_dir_url(__FILE__) . 'css/ai.css', array(), '1.0.0');
 }
 add_action('admin_enqueue_scripts', 'automated_accessibility_checker_enqueue_scripts');
+
 
 // Add the plugin's settings page to the admin menu
 function automated_accessibility_checker_add_menu_page() {
