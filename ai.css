@@ -1,0 +1,55 @@
+/* Automated Accessibility Checker CSS */
+
+#automated-accessibility-checker-results {
+    font-family: Arial, sans-serif;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    overflow-wrap: break-word;
+}
+
+#automated-accessibility-checker-results pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+#automated-accessibility-checker-results p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+#automated-accessibility-checker-results button {
+    font-size: 16px;
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: #0073aa;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#automated-accessibility-checker-results button:hover {
+    background-color: #005a87;
+}
+
+#automated-accessibility-checker-results button:active {
+    background-color: #004166;
+    position: relative;
+    top: 1px;
+}
+
+#automated-accessibility-checker-results .analysis-result {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+#automated-accessibility-checker-results .analysis-result strong {
+    font-weight: bold;
+}
